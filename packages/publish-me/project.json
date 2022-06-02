@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/hello-lib/src",
+  "sourceRoot": "packages/publish-me/src",
   "projectType": "library",
   "targets": {
     "build": {
@@ -9,18 +9,18 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/packages/hello-lib",
-        "main": "packages/hello-lib/src/index.ts",
-        "tsConfig": "packages/hello-lib/tsconfig.lib.json",
+        "outputPath": "dist/packages/publish-me",
+        "main": "packages/publish-me/src/index.ts",
+        "tsConfig": "packages/publish-me/tsconfig.lib.json",
         "assets": [
-          "packages/hello-lib/*.md"
+          "packages/publish-me/*.md"
         ]
       }
     },
     "publish": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "command": "node tools/scripts/publish.mjs hello-lib {args.ver} {args.tag}"
+        "command": "node tools/scripts/publish.mjs publish-me {args.ver} {args.tag}"
       },
       "dependsOn": [
         {
@@ -36,17 +36,17 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "packages/hello-lib/**/*.ts"
+          "packages/publish-me/**/*.ts"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": [
-        "coverage/packages/hello-lib"
+        "coverage/packages/publish-me"
       ],
       "options": {
-        "jestConfig": "packages/hello-lib/jest.config.ts",
+        "jestConfig": "packages/publish-me/jest.config.ts",
         "passWithNoTests": true
       }
     }
