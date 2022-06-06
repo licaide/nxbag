@@ -24,7 +24,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@atinc'
         #if: ${{ steps.release.outputs.releases_created }}
-      - run: npm ci
+      - run: npm install
         #if: ${{ steps.release.outputs.releases_created }}
       - run: npx nx build hello-lib
         #if: ${{ steps.release.outputs.releases_created }}
