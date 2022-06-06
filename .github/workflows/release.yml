@@ -12,8 +12,8 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: pql
-          path: packages/pql
+          package-name: hello-lib
+          path: packages/hello-lib
       - uses: actions/checkout@v3
         if: ${{ steps.release.outputs.releases_created }}
       - uses: actions/setup-node@v3
@@ -24,10 +24,10 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.releases_created }}
-      - run: npx nx build pql
+      - run: npx nx build hello-lib
         if: ${{ steps.release.outputs.releases_created }}
       - run: npm publish
-        working-directory: ./dist/packages/pql
+        working-directory: ./dist/packages/hello-lib
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ steps.release.outputs.releases_created }}
