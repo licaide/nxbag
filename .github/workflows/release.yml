@@ -28,7 +28,7 @@ jobs:
         if: ${{ steps.release.outputs.releases_created }}
       - run: npx nx build hello-lib
         #if: ${{ steps.release.outputs.releases_created }}
-      - run: npm publish
+      - run: npx nx publish
         working-directory: ./dist/packages/hello-lib
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
