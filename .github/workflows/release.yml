@@ -29,7 +29,7 @@ jobs:
       - run: npx nx build hello-lib
         #if: ${{ steps.release.outputs.releases_created }}
       ##- run: npx nx publish hello-lib
-      - run: npm publish
+      - run: npm version patch && npm publish
         working-directory: ./dist/packages/hello-lib
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
