@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/licaide/nxbag/compare/v2.0.0...v2.1.0) (2022-06-07)
+
+
+### Features
+
+* add world lib ([2b788df](https://github.com/licaide/nxbag/commit/2b788df9303a23efd7297557d07981079abc45ce))
+
 ## [2.0.0](https://github.com/licaide/nxbag/compare/v1.0.4...v2.0.0) (2022-06-07)
 
 
