@@ -25,12 +25,12 @@ jobs:
           scope: '@atinc'
         if: ${{ steps.release.outputs.releases_created }}
       #- run: npm install
-      - run: npm ci #必须的有package-lock.json文件1
+      - run: npm ci #必须的有package-lock.json文件3
         if: ${{ steps.release.outputs.releases_created }}
       - run: npx nx build hello-lib
         if: ${{ steps.release.outputs.releases_created }}
-      #- run: npx nx publish hello-lib
-      - run: npm publish
+      - run: npx nx publish hello-lib
+      #- run: npm publish
         working-directory: ./dist/packages/hello-lib
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
