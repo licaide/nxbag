@@ -1,3 +1,3 @@
 export function helloLib(): string {
-    return 'hello-lib+9';
+    return 'hello-lib+10';
 }
