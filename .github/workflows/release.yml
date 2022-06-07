@@ -23,7 +23,7 @@ jobs:
           node-version: 14
           registry-url: 'https://npm.pkg.github.com'
           scope: '@atinc'
-        #if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.releases_created }}
       #- run: npm install
       - run: npm ci #必须的有package-lock.json文件
         if: ${{ steps.release.outputs.releases_created }}
