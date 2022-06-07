@@ -23,6 +23,9 @@
       ],
       "@nxbag/publish-me": [
         "packages/publish-me/src/index.ts"
+      ],
+      "@nxbag/world-lib": [
+        "packages/world-lib/src/index.ts"
       ]
     }
   },
