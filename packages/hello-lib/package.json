@@ -1,6 +1,6 @@
 {
   "name": "@licaide/hello-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "commonjs",
   "scripts": {
     "build": "echo 'implement build'",
