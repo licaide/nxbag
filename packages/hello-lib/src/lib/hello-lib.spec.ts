@@ -2,6 +2,8 @@ import { helloLib } from './hello-lib';
 
 describe('helloLib', () => {
     it('should work', () => {
-        expect(helloLib() != "").toEqual(true);
+        var str = helloLib();
+        console.log(str);
+        expect(str != "").toEqual(true);
     })
 })
