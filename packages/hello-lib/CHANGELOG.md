@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.0](https://github.com/licaide/nxbag/compare/v1.0.4...v2.0.0) (2022-06-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* 108
+
+### Bug Fixes
+
+* 105 ([fc3127b](https://github.com/licaide/nxbag/commit/fc3127b06abdee3d3c05b11499f7ba6d9df6fea2))
+* 106 ([0937d2d](https://github.com/licaide/nxbag/commit/0937d2de03cda090a5596702a0eb699df1fc704e))
+* 107 ([d06c4d5](https://github.com/licaide/nxbag/commit/d06c4d5fcb573b81de5eac27baa21a96ec975cbc))
+* 108 ([ef56ab4](https://github.com/licaide/nxbag/commit/ef56ab49fa7925a85452eaf6a96dc1ff36bd3731))
+
 ## [1.0.4](https://github.com/licaide/nxbag/compare/v1.0.3...v1.0.4) (2022-06-07)
 
 
