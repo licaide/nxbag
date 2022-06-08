@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.4](https://github.com/licaide/nxbag/compare/v2.1.3...v2.1.4) (2022-06-08)
+
+
+### Bug Fixes
+
+* add lib ([e2caa99](https://github.com/licaide/nxbag/commit/e2caa99a87b5f172d79022d8d85b106b5ad8e06a))
+
 ## [2.1.3](https://github.com/licaide/nxbag/compare/v2.1.2...v2.1.3) (2022-06-07)
 
 
