@@ -24,7 +24,7 @@
       "@nxbag/publish-me": [
         "packages/publish-me/src/index.ts"
       ],
-      "@nxbag/world-lib": [
+      "@licaide/world-lib": [
         "packages/world-lib/src/index.ts"
       ]
     }

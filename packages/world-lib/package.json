@@ -1,5 +1,12 @@
 {
-  "name": "@nxbag/world-lib",
+  "name": "@licaide/world-lib",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:licaide/nxbag.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
